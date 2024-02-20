@@ -1,0 +1,24 @@
+.aim-trainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #363636;
+  padding: 20px;
+}
+
+.aim-trainer__title {
+  color: #dadada;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aim-trainer__train-box {
+  width: 80vw;
+  height: 80vh;
+  background-color: #6767ca;
+  border-radius: 5px;
+}
