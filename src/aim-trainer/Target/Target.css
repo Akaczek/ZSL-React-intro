@@ -1,0 +1,12 @@
+.target {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  cursor: pointer;
+}
+
+.target:hover {
+  background-color: #a9a9a9;
+}
