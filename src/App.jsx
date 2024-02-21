@@ -1,9 +1,7 @@
-import AimTrainer from "./aim-trainer/AimTrainer";
-
 const App = () => {
   return (
     <>
-      <AimTrainer />
+      <h1>Hello World</h1>
     </>
   );
 }
