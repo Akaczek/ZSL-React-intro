@@ -1,13 +1,20 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { getRandomInt } from '../../lib/utils';
 import './Target.css';
 
 const Target = () => {
-  const MAX_WIDTH = document.getElementById('train-box')?.offsetWidth - 100;
-  const MAX_HEIGHT = document.getElementById('train-box')?.offsetHeight - 100;
+  const [maxWidth, setMaxWidth] = useState(0);
+  const [maxHeight, setMaxHeight] = useState(0);
   const [topShift, setTopShift] = useState(0);
   const [leftShift, setLeftShift] = useState(0);
+
+  useEffect(() => {
+    setMaxWidth(document.getElementById('train-box')?.offsetWidth - 100);
+    setMaxHeight(document.getElementById('train-box')?.offsetHeight - 100);
+    console.log('width', document.getElementById('train-box')?.offsetWidth - 100)
+    console.log('height', document.getElementById('train-box')?.offsetHeight - 100)
+  }, []);
 
   return (
     <div 
@@ -17,8 +24,8 @@ const Target = () => {
         left: `${leftShift}px`,
       }}
       onClick={() => {
-        setTopShift(getRandomInt(MAX_HEIGHT));
-        setLeftShift(getRandomInt(MAX_WIDTH));
+        setTopShift(getRandomInt(maxHeight));
+        setLeftShift(getRandomInt(maxWidth));
       }}
     >
 
