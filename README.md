@@ -20,6 +20,7 @@
 2. React dokumentacja: https://react.dev/learn/describing-the-ui
 3. State of JS: https://stateofjs.com/en-US
 4. Ścieżki rozwoju: https://roadmap.sh/roadmaps
+5. Link do repo: https://github.com/Akaczek/ZSL-React-intro
 
 ## Pomysły na aplikacje do przećwiczenia
 1. To Do lista - lista rzeczy do zrobienia z możliwością odhaczania zadań wykonanych
