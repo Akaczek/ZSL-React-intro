@@ -16,16 +16,32 @@
   position: relative;
 }
 
-.clock-hand {
+.seconds-clock-hand {
   position: absolute;
-  width: 4px;
+  width: 2px;
   height: 250px;
   display: flex;
   flex-direction: column;
 }
 
+.minutes-clock-hand {
+  position: absolute;
+  width: 4px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hours-clock-hand {
+  position: absolute;
+  width: 6px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
 .white-part {
-  background-color: #ffffff;
+  background-color: transparent;
   flex-grow: 1;
 }
 
